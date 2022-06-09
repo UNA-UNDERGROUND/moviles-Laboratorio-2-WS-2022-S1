@@ -1,0 +1,7 @@
+# only allow access to api directory
+RewriteEngine on
+
+RewriteRule !api - [F]
+RewriteRule ^/?Sapi/buses/([0-9]+)$ /api/buses/?id=$1
+RewriteRule ^/?Sapi/empleados/([0-9]+)$ /api/empleados?id=$1
+RewriteRule ^/?Sapi/solicitudes/([0-9]+)$ /api/solicitudes?id=$1
