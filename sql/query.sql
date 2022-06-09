@@ -21,6 +21,7 @@ create table empleados(
     nombre          varchar(75)    not null,
     apellidos       varchar(150)   not null,
     telefono        varchar(20)    not null,
+    correo          varchar(100)   not null,
     direccion       varchar(500)   not null,
     tipo_licencia   varchar(10)    not null,
     constraint      empleados_pk
